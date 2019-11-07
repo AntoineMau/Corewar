@@ -1,0 +1,117 @@
+.name "Malozore"
+.comment "Destroyyy"
+
+start:
+		lfork %2048
+		live %1
+		fork %:masterlife
+		sti r1, %:live, %1
+		and r1, %0, r1
+live:	
+		live %1
+		zjmp %:live
+
+masterlife:
+		ld %0,r2
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+		st r1,251
+loop:
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		live %1
+		zjmp %:loop
